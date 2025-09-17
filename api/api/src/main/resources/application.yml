@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+hlr:
+  soap:
+    endpoint: https://localhost:8443/hlr-soap-service
+    username: testuser
+    password: testpass
+    timeout: 5000
+
+jwt:
+  secret: nBWNGpOYUh6KsoWcrQswmBGmQu8qfLc9mW0G_gyKF23E7ddyZXEcZlBz7c8-p-GKoKXuOBJ6IxD7peU9fONTuw
+  expiration: 3600000
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    org.springframework.ws.client.MessageTracing: DEBUG
